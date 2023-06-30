@@ -37,3 +37,7 @@ Shift the task where the pointer is to the left block.
 
 Show or Hide task where the pointer is on top of.
 
+## Demo
+
+![](https://github.com/rapha-au/kanban-rs/blob/main/assets/KanbanExample.gif)
+
