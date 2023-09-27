@@ -339,7 +339,7 @@ impl Board {
                     KeyEvent {
                         code: KeyCode::Char('s'),
                         modifiers: KeyModifiers::NONE,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.check_save() == true {
@@ -355,7 +355,7 @@ impl Board {
                     KeyEvent {
                         code: KeyCode::Char('c'),
                         modifiers: KeyModifiers::NONE,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -367,7 +367,7 @@ impl Board {
                     KeyEvent {
                         code: KeyCode::Char('d'),
                         modifiers: KeyModifiers::NONE,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -398,7 +398,7 @@ impl Board {
                     // MOVE SELECTOR UP
                     KeyEvent {
                         code: KeyCode::Up,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -413,7 +413,7 @@ impl Board {
                     // MOVE SELECTOR DOWN
                     KeyEvent {
                         code: KeyCode::Down,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -439,7 +439,7 @@ impl Board {
                     // MOVE SELECTOR RIGHT
                     KeyEvent {
                         code: KeyCode::Right,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -454,7 +454,7 @@ impl Board {
                     // MOVE SELECTOR LEFT
                     KeyEvent {
                         code: KeyCode::Left,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -469,7 +469,7 @@ impl Board {
                     // QUICK PUSH RIGHT
                     KeyEvent {
                         code: KeyCode::Char('>'),
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -491,7 +491,7 @@ impl Board {
                     // QUICK PUSH LEFT
                     KeyEvent {
                         code: KeyCode::Char('<'),
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::Command {
@@ -563,7 +563,7 @@ impl Board {
                     // WRITE CHARS
                     KeyEvent {
                         code: KeyCode::Char(key),
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::WritingTask
@@ -589,7 +589,7 @@ impl Board {
                     // ERASE CHARS
                     KeyEvent {
                         code: KeyCode::Backspace,
-                        kind: KeyEventKind::Release,
+                        kind: KeyEventKind::Press,
                         ..
                     } => {
                         if self.input_state == InputMode::WritingTask
